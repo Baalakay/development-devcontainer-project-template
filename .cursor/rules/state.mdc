@@ -1,8 +1,3 @@
----
-description: "CursorRIPER Framework - State Management"
-globs: 
-alwaysApply: true
----
 *This file automatically tracks the current state of the project. It should never be edited manually.*
 
    - Reset START_PHASE_STEP to 1
@@ -20,7 +15,7 @@ RIPER_CURRENT_MODE: "EXECUTE"
 START_PHASE_STATUS: "COMPLETED"
 # Possible values: "NOT_STARTED", "IN_PROGRESS", "COMPLETED", "ARCHIVED"
 
-START_PHASE_STEP: 6
+START_PHASE_STEP: 1
 # Possible values: 0-6 (0=Not started, 1=Requirements, 2=Technology, 3=Architecture, 4=Scaffolding, 5=Environment, 6=Memory Bank)
 
 LAST_UPDATE: "2025-04-05T00:00:00Z"
