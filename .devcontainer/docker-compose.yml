@@ -1,6 +1,7 @@
 
 services:
   app:
+    init: true
     environment:
       - $
     build: 
