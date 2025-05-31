@@ -5,7 +5,10 @@
 This repository provides a robust, ready-to-use development environment for modern full-stack projects (particularly Generative AI projects) using [Docker](https://www.docker.com/), [devcontainers](https://containers.dev/), and any compatible IDE such as [Cursor](https://www.cursor.so/), [VS Code](https://code.visualstudio.com/), [Windsurf](https://windsurf.ai/), and others. It is designed for developers who want a seamless, reproducible setup for both backend (Python/FastAPI) and frontend (React/Vite) development, with advanced tooling and cloud integration out of the box.
 
 > **Prerequisite:**
-> You must have [Docker](https://www.docker.com/products/docker-desktop/) and an IDE such as [Cursor](https://www.cursor.so/), [Windsurf](https://windsurf.ai/), or [VS Code](https://code.visualstudio.com/) installed on your local machine before using this template. Please install these tools first if you haven't already.
+> You must have [Docker](https://www.docker.com/products/docker-desktop/) and an IDE such as [Cursor](https://www.cursor.so/), [Windsurf](https://windsurf.ai/), or [VS Code](https://code.visualstudio.com/) installed on your local machine before using this template. 
+> - You must also install the [Dev Containers (Remote Development) extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
+> - Cursor and Windsurf are forks of VSCode and so have built-in support for devcontainers.
+> - Please install these tools first if you haven't already.
 
 ---
 
@@ -189,7 +192,7 @@ This repository provides a robust, ready-to-use development environment for mode
 - Or download the ZIP and extract it to your desired project directory.
 
 **2. Open the Project in Cursor or VS Code**
-- Launch [Cursor IDE](https://www.cursor.so/) or [VS Code](https://code.visualstudio.com/).
+- Launch [Cursor IDE](https://www.cursor.so/) or [VS Code](https://code.visualstudio.com/) (or other compatible IDEs).
 - Open the project folder you just cloned or extracted.
 
 **3. Rebuild and Open in Devcontainer**
