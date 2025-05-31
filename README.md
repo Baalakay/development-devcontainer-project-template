@@ -2,7 +2,10 @@
 
 **Repository:** [https://github.com/Baalakay/template.git](https://github.com/Baalakay/template.git)
 
-This repository provides a robust, ready-to-use development environment for modern full-stack projects using [Docker](https://www.docker.com/), [devcontainers](https://containers.dev/), and the [Cursor IDE](https://www.cursor.so/). It is designed for developers who want a seamless, reproducible setup for both backend (Python/FastAPI) and frontend (React/Vite) development, with advanced tooling and cloud integration out of the box.
+This repository provides a robust, ready-to-use development environment for modern full-stack projects using [Docker](https://www.docker.com/), [devcontainers](https://containers.dev/), and any compatible IDE such as [Cursor](https://www.cursor.so/), [VS Code](https://code.visualstudio.com/), [Windsurf](https://windsurf.ai/), and others. It is designed for developers who want a seamless, reproducible setup for both backend (Python/FastAPI) and frontend (React/Vite) development, with advanced tooling and cloud integration out of the box.
+
+> **Prerequisite:**
+> You must have [Docker](https://www.docker.com/products/docker-desktop/) and an IDE such as [Cursor](https://www.cursor.so/), [Windsurf](https://windsurf.ai/), or [VS Code](https://code.visualstudio.com/) installed on your local machine before using this template. Please install these tools first if you haven't already.
 
 ---
 
