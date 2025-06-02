@@ -61,12 +61,6 @@ This repository provides a robust, ready-to-use development environment for mode
 ## 🗂️ Devcontainer & Git Project Setup
 
 - **Devcontainer Configuration**: All devcontainer and Docker configuration files are located in the `.devcontainer` folder at the project root. This folder defines the environment, features, volumes, and mounts for your project.
-- **Git Integration**: Git is enabled at the project root (`/workspace`). You can use all standard git commands to manage your source code.
-- **Adding Your Own Remote**: To push your project to GitHub (or another remote), add your own remote URL. For example:
-  ```sh
-  git remote add origin https://github.com/your-username/your-repo.git
-  git push -u origin main
-  ```
 - **Cloning for New Projects**: You can simply clone this repository into any new project directory or with any new name. It will automatically be recognized as a devcontainer project and set up the environment for you on first open in Cursor or VS Code.
 
 ---
