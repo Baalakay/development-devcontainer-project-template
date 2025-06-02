@@ -120,3 +120,8 @@ exclude = [
 
 [tool.uv]
 package = false
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.12",
+]
