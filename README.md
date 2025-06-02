@@ -1,6 +1,6 @@
-# Blake's Template Devcontainer for Modern Python & React Development
+# Project Template for Modern Python & React Development
 
-**Repository:** [https://github.com/Baalakay/template.git](https://github.com/Baalakay/template.git)
+## Overview
 
 This repository provides a robust, ready-to-use development environment for modern full-stack projects (particularly Generative AI projects) using [Docker](https://www.docker.com/), [devcontainers](https://containers.dev/), and any compatible IDE such as [Cursor](https://www.cursor.so/), [VS Code](https://code.visualstudio.com/), [Windsurf](https://windsurf.ai/), and others. It is designed for developers who want a seamless, reproducible setup for both backend (Python/FastAPI) and frontend (React/Vite) development, with advanced tooling and cloud integration out of the box.
 
@@ -9,6 +9,9 @@ This repository provides a robust, ready-to-use development environment for mode
 > - You must also install the [Dev Containers (Remote Development) extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
 > - Cursor and Windsurf are forks of VSCode and so have built-in support for devcontainers.
 > - Please install these tools first if you haven't already.
+
+> - **You must first clone the global devcontainer config and follow the instructions there to clone it's repo and create the symlink from your project folder:**
+> See https://github.com/Baalakay/development-devcontainer-shared-config-template.git, and once done, come back to these instructions.
 
 ---
 
@@ -65,19 +68,6 @@ This repository provides a robust, ready-to-use development environment for mode
   git push -u origin main
   ```
 - **Cloning for New Projects**: You can simply clone this repository into any new project directory or with any new name. It will automatically be recognized as a devcontainer project and set up the environment for you on first open in Cursor or VS Code.
-
----
-
-## 🧩 Why Use a Devcontainer? (Benefits & Safe Rebuilds)
-
-- **Safe to Rebuild**: You can safely rebuild the devcontainer at any time (for example, to add new features, update tools, or refresh the environment) without losing your source code. Your code always lives on your local machine and is mounted into the container, so it is never deleted or overwritten by container rebuilds.
-- **Purpose of a Development Devcontainer**: A devcontainer provides a fully isolated, reproducible development environment. All packages, libraries, and tools are installed inside the container, not on your host. This prevents pollution or conflicts on your local system, ensures consistent builds across machines, and makes it easy to onboard new team members or move between computers.
-- **Key Benefits**:
-  - **Reproducible builds**: Everyone gets the same environment, every time.
-  - **Isolation**: No more dependency conflicts or "works on my machine" problems.
-  - **Clean host system**: Your local OS stays clean—no need to install or update project-specific tools globally.
-  - **Easy management**: Update, reset, or extend your environment with a single config change.
-  - **Portability**: Move your project between machines or share with teammates with zero setup hassle.
 
 ---
 
@@ -184,16 +174,25 @@ This repository provides a robust, ready-to-use development environment for mode
 
 ## 🚀 Quick Start
 
+**FIRST, complete ALL prerequisites listed above**
+- Then come back to this repo to continue here
+
 **1. Download or Clone the Repository**
-- Use the following command to clone into a new local folder (e.g., `my-app-1`):
+- Use the following command to clone into a new local project folder (e.g., `my-app`):
   ```sh
-  git clone https://github.com/Baalakay/template.git my-app-1
+  cd my-app
+  git clone https://github.com/Baalakay/development-devcontainer-project-template.git .
   ```
 - Or download the ZIP and extract it to your desired project directory.
 
 **2. Open the Project in Cursor or VS Code**
 - Launch [Cursor IDE](https://www.cursor.so/) or [VS Code](https://code.visualstudio.com/) (or other compatible IDEs).
 - Open the project folder you just cloned or extracted.
+- Or open the project from the terminal with:
+  ```sh
+  cursor .   # For Cursor IDE
+  code .     # For VS Code
+  ```
 
 **3. Rebuild and Open in Devcontainer**
 - Press <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>P</kbd> (or <kbd>Shift</kbd>+<kbd>Cmd</kbd>+<kbd>P</kbd> on Mac) to open the command palette.
@@ -201,7 +200,11 @@ This repository provides a robust, ready-to-use development environment for mode
 - This will build the devcontainer, set up all dependencies, and create the necessary Docker volumes and mounts. The first build may take several minutes as it downloads and installs everything.
 - Once the container is ready, your development environment is fully set up and isolated from your host system. All further development happens inside the container.
 
-**4. Start the Servers**
+---
+
+## Start the Servers
+
+After the devcontainer is built and running, you can start the backend and frontend servers:
 
 - **Start the FastAPI backend server:**
   ```sh
@@ -213,6 +216,8 @@ This repository provides a robust, ready-to-use development environment for mode
   cd frontend && npm run dev -- --host --port=5173
   ```
 
+---
+
 ## 🔌 Open Ports
 
 The devcontainer is configured to forward several ports from the container to your host, making it easy to access development servers and tools:
@@ -223,7 +228,3 @@ The devcontainer is configured to forward several ports from the container to yo
 - **5678**: Python debugger (used for remote debugging sessions, e.g., with VS Code or Cursor)
 
 These ports are defined in the `forwardPorts` array in `.devcontainer/devcontainer.json` and are automatically made available on your host when the devcontainer is running.
-
----
-
-For any questions or issues, please refer to the documentation above or open an issue in this repository.

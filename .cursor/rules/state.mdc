@@ -1,3 +1,13 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+*This file automatically tracks the current state of the project. It should never be edited manually.*
+
+   - Reset START_PHASE_STEP to 1
+
+---
 *This file automatically tracks the current state of the project. It should never be edited manually.*
 
    - Reset START_PHASE_STEP to 1
@@ -6,7 +16,8 @@
 
 *This file automatically tracks the current state of the project. It should never be edited manually.*
 
-PROJECT_PHASE: "DEVELOPMENT"
+PROJECT_PHASE="UNINITIATED"
+MODE="RESEARCH"
 # Possible values: "UNINITIATED", "INITIALIZING", "DEVELOPMENT", "MAINTENANCE"
 
 RIPER_CURRENT_MODE: "EXECUTE"
